@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none !important;
+    font-family: Poppins-Medium;
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url(./fonts/Poppins-Medium.ttf);
+  }
+  
+  .main-container {
+    height: 100vh;
+    background: #ede884;
+    position: relative;
+    padding-top: 20px;
+  }
+  
+  
+  
+  .intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 10px;
+  }
+  
+  .intro h1 {
+    font-size: 64px;
+  }
+  
+  .intro-btn-group {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .intro-btn-group button {
+    font-size: 22px;
+    padding: 6px 22px;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px #00000881;
+  }
+  
+  .intro-btn-group button:hover {
+    background-color: #000;
+    color: #558be7;
+    transition: all 0.4s;
+  }
+  
+  
+  
+  .game {
+    display: none;
+  }
+  
+  .score-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    color: #e0fab2;
+  }
+  
+  .result-div span {
+    font-size: 22px;
+    color: #fff;
+  }
+  
+  .result-div p {
+    font-size: 18px;
+    color: #000;
+  }
+  
+  .result-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+  }
+  
+  #playerLose,
+  #playerWin {
+    display: none;
+    font-size: 50px;
+  }
+  
+  #playerWin {
+    color: #07ffde;
+  }
+  
+  #playerLose {
+    color: #e37c22;
+  }
+  
+  .human-score,
+  .computer-score {
+    text-align: center;
+  }
+  
+  .human-score p {
+    font-size: 100px;
+  }
+  
+  .human-score span {
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .computer-score p {
+    font-size: 100px;
+  }
+  
+  .computer-score span {
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 55vh;
+  }
+  
+  .image-container img {
+    width: 28%;
+  }
+  
+  #computerHand {
+    transform: scaleX(-1);
+  }
+  
+  .btn-group {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+  }
+  
+  .btn-group button {
+    padding: 22px 26px;
+    border-radius: 50%;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-size: 22px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px #00000881;
+  }
+  
+  .btn-group button:hover {
+    transform: translateY(-10px);
+    transition: all 0.4s;
+  }
+  
+  
+  
+  @media screen and (min-width: 300px) and (max-width: 1111px) {
+    
+    .intro h1 {
+      font-size: 40px;
+    }
+  
+    .intro-btn-group {
+      gap: 30px;
+    }
+  
+    .intro-btn-group button {
+      font-size: 18px;
+    }
+  
+    #playerLose,
+    #playerWin {
+      font-size: 24px;
+    }
+  
+    .result-div span {
+      font-size: 18px;
+    }
+  
+    .result-div p {
+      font-size: 18px;
+    }
+  
+    .image-container {
+      gap: 30px;
+      height: 40vh;
+    }
+  
+    .score-container {
+      gap: 60px;
+    }
+  
+    .btn-group {
+      margin-top: 60px;
+      gap: 50px;
+    }
+  }

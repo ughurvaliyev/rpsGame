@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <div id="intro" class="intro">
+        <h1>Hazırsan?</h1>
+        <div class="intro-btn-group">
+          <button onclick="playGame()">Oynayaq!</button>
+          <button onclick="cancelGame()">Çıxış</button>
+        </div>
+      </div>
+
+      <div id="game" class="game">
+        <div class="score-container">
+          <div class="human-score">
+            <p id="humanScore">0</p>
+            <span>Sən</span>
+          </div>
+          <div class="result-div">
+            <p>WIN: <span id="winResult">0</span></p>
+            <p>LOSE: <span id="loseResult">0</span></p>
+          </div>
+          <div class="computer-score">
+            <p id="computerScore">0</p>
+            <span>Machine</span>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img id="humanHand" src="./images/r.png" alt="#" />
+          <div class="result-container">
+            <p id="playerWin">Qazandız!</p>
+            <p id="playerLose">Məğlub oldunuz!</p>
+          </div>
+          <img id="computerHand" src="./images/r.png" alt="#" />
+        </div>
+
+        <div class="btn-group">
+          <button onclick="rockBtn()">R</button>
+          <button onclick="paperBtn()">P</button>
+          <button onclick="scissorsBtn()">S</button>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
